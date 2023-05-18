@@ -54,7 +54,6 @@ body {
 
 h1, h2, p {
   margin: 0;
-  color: black;
 }
 
 ul {
@@ -268,6 +267,7 @@ img {
 }
 
 .about__text {
+  color: black;
   margin-bottom: var(--mb-4);
 }
 
@@ -300,7 +300,7 @@ img {
   padding: 10px;
   border-radius: 50%;
   border-radius: 15px;
-  color: #204c85;
+  color: #0e4877;
   transition: 0.5s;
   align-items: center;
   justify-content: center;
