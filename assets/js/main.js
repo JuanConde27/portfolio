@@ -74,7 +74,7 @@ const espanol = document.getElementById('espanol');
 
 espanol.addEventListener('click', () => {
     nav__list.innerHTML = '<li class="nav__item"><a href="#home" class="nav__link active-link">Inicio</a></li><li class="nav__item"><a href="#about" class="nav__link">Sobre mí</a></li><li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li><li class="nav__item"><a href="#work" class="nav__link">Trabajos</a></li><li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>';
-    home_title.innerHTML = 'Hola!<br>Soy<span class="home__title-color">Juan Manuel</span><br> Desarrollador Web Full Stack';
+    home_title.innerHTML = 'Hola!<br>Soy <span class="home__title-color">Juan Manuel</span><br> Desarrollador Web Full Stack';
     descargar.innerHTML = 'Descargar CV';
     section_title.innerHTML = 'Sobre mí';
     text_skills.innerHTML = 'Habilidades';

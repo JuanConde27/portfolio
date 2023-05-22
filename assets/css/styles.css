@@ -285,6 +285,11 @@ img {
   border: 6px solid #fff;
 }
 
+.about__img img:hover {
+  transform: scale(1.05);
+  border: 6px solid #fff;
+}
+
 .about__text {
   color: black;
   font-weight: var(--font-semi);
