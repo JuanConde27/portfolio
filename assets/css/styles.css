@@ -264,10 +264,30 @@ img {
 
 .about__img {
   justify-self: center;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin-bottom: var(--mb-4);
+}
+
+.about__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 6px solid var(--first-color);
+  border-radius: 50%;
+  transition: 1s;
+}
+
+.about__img img:hover {
+  transform: scale(1.05);
+  border: 6px solid #fff;
 }
 
 .about__text {
   color: black;
+  font-weight: var(--font-semi);
   margin-bottom: var(--mb-4);
 }
 
@@ -300,7 +320,7 @@ img {
   padding: 10px;
   border-radius: 50%;
   border-radius: 15px;
-  color: #0e4877;
+  color: #263485;
   transition: 0.5s;
   align-items: center;
   justify-content: center;
@@ -641,4 +661,46 @@ h2.skills__subtitle {
 .box:hover .content .text h3,
 .box:hover .content .text p {
   color: #fff;
+}
+
+
+.idioma {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  margin: 1rem;
+  font-size: 1rem;
+  color: var(--first-color);
+}
+
+#espanol {
+  color: var(--first-color);
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#ingles {
+  color: var(--first-color);
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#espanol:hover {
+  color: blue;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#ingles:hover {
+  color: blue;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
