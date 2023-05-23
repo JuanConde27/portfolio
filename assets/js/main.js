@@ -82,9 +82,9 @@ espanol.addEventListener('click', () => {
     text_projects.innerHTML = 'Proyectos';
     text_contact.innerHTML = 'Contacto';
     text_nodejs.innerHTML = 'Desarrollador con Node.js';
-    text_react.innerHTML = 'Desarrollador con React';
-    text_web.innerHTML = 'Desarrollo de sitios web';
-    text_marketing.innerHTML = 'Desarrollo de estrategias de marketing digital';
+    text_react.innerHTML = 'Desarrollador con ReactJs';
+    text_web.innerHTML = 'Desarrollador Web';
+    text_marketing.innerHTML = 'Estrategias de marketing digital';
     footer__title.innerHTML = 'Trabajemos juntos';
     about__text.innerHTML = 'Tengo 20 años, soy estudiante de Ingeniería de Sistemas y desarrollador web full stack que vive en Cali, Colombia. Apasionado por la innovación, la tecnología, la programación y el desarrollo web y de software. Si estás interesado en mi trabajo y te gustaría colaborar en un proyecto, estaré encantado de trabajar contigo, y tú estarás encantado de trabajar conmigo. Lo único de lo que estoy seguro es que vine a este mundo para ser grande ¡y trabajaré duro para lograrlo! Me gusta aprender nuevas tecnologías y mejorar mis habilidades. Me gusta trabajar en equipo, soy responsable y comprometido con mi trabajo.';
 }

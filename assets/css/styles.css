@@ -671,11 +671,17 @@ h2.skills__subtitle {
 
 .idioma {
   position: absolute;
-  top: 10px;
+  top: 10%;
   right: 0;
   margin: 1rem;
   font-size: 1rem;
   color: var(--first-color);
+}
+
+@media screen and (max-width: 770px) {
+  .idioma {
+    top: 2%;
+  }
 }
 
 #espanol {
@@ -704,6 +710,102 @@ h2.skills__subtitle {
 
 #ingles:hover {
   color: blue;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#html {
+  color: red;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#css {
+  color: blue;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#javascript {
+  color: rgb(255, 255, 0);
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#react {
+  color: rgb(0, 255, 255);
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#nodejs {
+  color: rgb(0, 255, 0);
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#mongodb {
+  color: rgb(1, 99, 42);
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#firebase {
+  color: rgb(255, 115, 0);
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#git {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#github {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#sql {
+  color: rgb(0, 0, 255);
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#python {
+  color: rgb(10, 124, 177);
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#java {
+  color: rgb(255, 0, 0);
   text-decoration: none;
   border: none;
   background: none;
