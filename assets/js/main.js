@@ -70,9 +70,10 @@ const text_web = document.getElementById('text_web');
 const text_marketing = document.getElementById('text_marketing');
 const footer__title = document.querySelector('.footer__title');
 
-const espanol = document.getElementById('espanol');
+const language = document.getElementById('language');
 
-espanol.addEventListener('click', () => {
+language.addEventListener('click', () => {
+    if (language.value === 'es') {
     nav__list.innerHTML = '<li class="nav__item"><a href="#home" class="nav__link active-link">Inicio</a></li><li class="nav__item"><a href="#about" class="nav__link">Sobre mí</a></li><li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li><li class="nav__item"><a href="#work" class="nav__link">Trabajos</a></li><li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>';
     home_title.innerHTML = 'Hola!<br>Soy <span class="home__title-color">Juan Manuel</span><br> Desarrollador Web Full Stack';
     descargar.innerHTML = 'Descargar CV';
@@ -87,13 +88,7 @@ espanol.addEventListener('click', () => {
     text_marketing.innerHTML = 'Estrategias de marketing digital';
     footer__title.innerHTML = 'Trabajemos juntos';
     about__text.innerHTML = 'Tengo 20 años, soy estudiante de Ingeniería de Sistemas y desarrollador web full stack que vive en Cali, Colombia. Apasionado por la innovación, la tecnología, la programación y el desarrollo web y de software. Si estás interesado en mi trabajo y te gustaría colaborar en un proyecto, estaré encantado de trabajar contigo, y tú estarás encantado de trabajar conmigo. Lo único de lo que estoy seguro es que vine a este mundo para ser grande ¡y trabajaré duro para lograrlo! Me gusta aprender nuevas tecnologías y mejorar mis habilidades. Me gusta trabajar en equipo, soy responsable y comprometido con mi trabajo.';
-}
-);
-
-const ingles = document.getElementById('ingles');
-
-ingles.addEventListener('click', () => {
-    window.location.reload();
-}
-);
-
+    } else if (language.value === 'en') {
+        window.location.reload();
+    }
+});

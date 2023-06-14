@@ -811,3 +811,28 @@ h2.skills__subtitle {
   background: none;
   cursor: pointer;
 }
+
+.item-skills p {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: black;
+}
+
+.language {
+  position: absolute;
+  top: 17%;
+  right: 0;
+  margin: 1rem;
+  font-size: 0.9rem;
+  color: var(--first-color);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 770px) {
+  .language {
+    top: 2%;
+  }
+}
