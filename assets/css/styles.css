@@ -587,88 +587,6 @@ h2.skills__subtitle {
   margin: 0 0.5rem;
 }
 
-/* ------- SERVICES -------- */
-.services {
-  width: 50%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  grid-gap: 1.5rem;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  padding: 2rem 0;
-
-}
-
-.box {
-  position: relative;
-  width: auto;
-  height: 75px;
-  background: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 10px 10px 15px rgba(59, 38, 38, 0.25);
-  transition: 0.5s ease-in-out;
-
-}
-.box::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 6px;
-  height: 100%;
-  background: var(--color);
-  transition: 0.5s ease-in-out;
-}
-
-.box:hover::before {
-  width: 100%;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.box .content {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-
-.box .content .icon {
-  position: relative;
-  min-width: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5em;
-  color: var(--color);
-  transition: 0.5s ease-in-out;
-}
-
-.box:hover .content .icon {
-  color: #fff;
-}
-
-.box .content .text h3 {
-  font-weight: 500;
-  color: var(--color);
-  transition: 0.5s ease-in-out;
-  color: #da8d28;
-}
-
-.box .content .text p {
-  font-size: 0.9em;
-  color: #999;
-  transition: 0.5s ease-in-out;
-}
-
-.box:hover .content .text h3,
-.box:hover .content .text p {
-  color: #fff;
-}
-
-
 .idioma {
   position: absolute;
   top: 10%;
@@ -812,6 +730,14 @@ h2.skills__subtitle {
   cursor: pointer;
 }
 
+#spring {
+  color: rgb(0, 255, 0);
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 .item-skills p {
   text-align: center;
   font-size: 0.75rem;
@@ -819,14 +745,20 @@ h2.skills__subtitle {
   color: black;
 }
 
+.home__data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .language {
-  position: absolute;
-  top: 17%;
-  right: 0;
-  margin: 1rem;
-  font-size: 0.9rem;
+  margin-top: 25px;
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
   color: var(--first-color);
-  border: none;
+  border: 1px solid var(--first-color);
   background: none;
   cursor: pointer;
 }

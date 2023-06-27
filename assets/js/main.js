@@ -61,7 +61,6 @@ const descargar = document.getElementById('descargar_cv');
 const section_title = document.querySelector('.section-title');
 const about__text = document.querySelector('.about__text');
 const text_skills = document.getElementById('text_skills');
-const text_services = document.getElementById('text_services');
 const text_projects = document.getElementById('text_projects');
 const text_contact = document.getElementById('text_contact');
 const text_nodejs = document.getElementById('text_nodejs');
@@ -78,8 +77,8 @@ language.addEventListener('click', () => {
     home_title.innerHTML = 'Hola!<br>Soy <span class="home__title-color">Juan Manuel</span><br> Desarrollador Web Full Stack';
     descargar.innerHTML = 'Descargar CV';
     section_title.innerHTML = 'Sobre mí';
+    about__text.innerHTML = 'Tengo 20 años, soy estudiante de Ingeniería de Sistemas y desarrollador web full stack que vive en Cali, Colombia. Apasionado por la innovación, la tecnología, la programación y el desarrollo web y de software. Si estás interesado en mi trabajo y te gustaría colaborar en un proyecto, estaré encantado de trabajar contigo, y tú estarás encantado de trabajar conmigo. Lo único de lo que estoy seguro es que vine a este mundo para ser grande ¡y trabajaré duro para lograrlo! Me gusta aprender nuevas tecnologías y mejorar mis habilidades. Me gusta trabajar en equipo, soy responsable y comprometido con mi trabajo.';
     text_skills.innerHTML = 'Habilidades';
-    text_services.innerHTML = 'Servicios';
     text_projects.innerHTML = 'Proyectos';
     text_contact.innerHTML = 'Contacto';
     text_nodejs.innerHTML = 'Desarrollador con Node.js';
@@ -87,7 +86,6 @@ language.addEventListener('click', () => {
     text_web.innerHTML = 'Desarrollador Web';
     text_marketing.innerHTML = 'Estrategias de marketing digital';
     footer__title.innerHTML = 'Trabajemos juntos';
-    about__text.innerHTML = 'Tengo 20 años, soy estudiante de Ingeniería de Sistemas y desarrollador web full stack que vive en Cali, Colombia. Apasionado por la innovación, la tecnología, la programación y el desarrollo web y de software. Si estás interesado en mi trabajo y te gustaría colaborar en un proyecto, estaré encantado de trabajar contigo, y tú estarás encantado de trabajar conmigo. Lo único de lo que estoy seguro es que vine a este mundo para ser grande ¡y trabajaré duro para lograrlo! Me gusta aprender nuevas tecnologías y mejorar mis habilidades. Me gusta trabajar en equipo, soy responsable y comprometido con mi trabajo.';
     } else if (language.value === 'en') {
         window.location.reload();
     }
