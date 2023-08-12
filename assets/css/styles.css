@@ -758,7 +758,7 @@ h2.skills__subtitle {
   font-size: 1rem;
   padding: 0.2rem 0.5rem;
   color: var(--first-color);
-  border: 1px solid var(--first-color);
+  border: none;
   background: none;
   cursor: pointer;
 }
