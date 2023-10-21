@@ -345,7 +345,7 @@ img {
 }
 
 .work__img {
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.516);
   border-radius: .5rem;
   overflow: hidden;
 }
@@ -357,6 +357,66 @@ img {
 .work__img img:hover {
   transform: scale(1.05);
 }
+
+/* Work Hover Effect */
+.work__img {
+  position: relative;
+}
+
+.work__buttons {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  color : white;
+}
+
+.work__img:hover .work__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.work__buttons span {
+  font-size: 0.85rem;
+  font-weight: var(--font-semi);
+  color: white;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.work__img:hover img {
+  filter: brightness(20%);
+  transform: scale(1.05);
+}
+
+.btn {
+  background-color: transparent;
+  color: white;
+  font-size: 0.85rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid white;
+}
+
+.btn:hover {
+  scale: 0.95;
+}
+
 
 /* ===== CONTACT =====*/
 .contact__input {

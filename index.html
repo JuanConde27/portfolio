@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/img/logo.png">
 
     <!-- =====ICONS===== -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -58,14 +59,15 @@
             <h2 class="section-title">About</h2>
             <div class="about__container bd-grid">
                 <div class="about__img">
-                    <img src="https://media.licdn.com/dms/image/D4E03AQHeed2OWtMp1A/profile-displayphoto-shrink_800_800/0/1696403043963?e=1702512000&v=beta&t=WkeN805pGOWtEUWayZMytFMuzLGIIkneIz59GtySR_0" alt="alt">
+                    <img src="https://media.licdn.com/dms/image/D4E03AQHeed2OWtMp1A/profile-displayphoto-shrink_800_800/0/1696403043963?e=1702512000&v=beta&t=WkeN805pGOWtEUWayZMytFMuzLGIIkneIz59GtySR_0"
+                        alt="alt">
                 </div>
-                <div>
+                <div class="about__data">
                     <p class="about__text">I'm 20 years old, i'm Systems Engineer student and full stack web developer
                         living in Cali, Colombia. Passionate about innovation, technology, Programming, Web and Software
                         Development. If you're interested in my work, if you would like to collaborate on a project,
                         I'll be happy to work with you, and you'll be delighted to work with me. The only thing I'm sure
-                        of is that I came to this world to be big, and I'll work hard for it!</p>
+                        of is that I came to this world to be big and I'll work hard for it!</p>
                 </div>
             </div>
         </section>
@@ -130,8 +132,15 @@
             <h2 class="section-title" id="text_projects">Projects</h2>
 
             <div class="work__container bd-grid">
-                <a href="https://juanconde27.github.io/landing_page/" class="work__img">
+                <a class="work__img">
                     <img src="./assets/img/proyect1.jpg" alt="">
+                    <div class="work__buttons">
+                        <span>Landing page for bussines and courses system</span>
+                        <div class="buttons">
+                            <button class="btn repo-btn" id="repo_landing">Repository</button>
+                            <button class="btn backend-btn" id="demo_landing">Demo</button>
+                        </div>
+                    </div>
                     <div class="work__icon">
                         <i class='bx bxl-html5'></i>
                         <i class='bx bxl-css3'></i>
@@ -140,8 +149,15 @@
                         <i class='bx bxl-sass'></i>
                     </div>
                 </a>
-                <a href="https://softwarelab-84147.web.app" class="work__img">
+                <a class="work__img">
                     <img src="./assets/img/proyect4.jpg" alt="">
+                    <div class="work__buttons">
+                        <span>Managing users with Firebase Auth and Firestore DB</span>
+                        <div class="buttons">
+                            <button class="btn repo-btn" id="repo_fire">Repository</button>
+                            <button class="btn backend-btn" id="demo_fire">Demo</button>
+                        </div>
+                    </div>
                     <div class="work__icon">
                         <i class='bx bxl-html5'></i>
                         <i class='bx bxl-css3'></i>
@@ -149,8 +165,15 @@
                         <i class='bx bxl-firebase'></i>
                     </div>
                 </a>
-                <a href="https://juanconde27.github.io/BarberFrontend/" class="work__img">
+                <a class="work__img">
                     <img src="./assets/img/proyect5.jpg" alt="">
+                    <div class="work__buttons">
+                        <span>Management Booking System for a Barbershop</span>
+                        <div class="buttons">
+                            <button class="btn repo-btn" id="repo_barber">Repository</button>
+                            <button class="btn backend-btn" id="demo_barber">Demo</button>
+                        </div>
+                    </div>
                     <div class="work__icon">
                         <i class='bx bxl-react'></i>
                         <i class='bx bxl-css3'></i>
@@ -159,8 +182,15 @@
                         <i class='bx bxl-nodejs'></i>
                     </div>
                 </a>
-                <a href="https://github.com/JuanConde27/Manage-User-Mysql-ReactJs" class="work__img">
-                    <img src="./assets/img/proyect7.jpg" alt="">
+                <a class="work__img">
+                    <img src="./assets/img/reactcrud.jpeg" alt="">
+                    <div class="work__buttons">
+                        <span>User management system using MySQL ReactJS and JWT</span>
+                        <div class="buttons">
+                            <button class="btn repo-btn" id="repo_crud">Repository</button>
+                            <button class="btn backend-btn" id="demo_crud">Demo</button>
+                        </div>
+                    </div>
                     <div class="work__icon">
                         <i class='bx bxl-react'></i>
                         <i class='bx bxl-css3'></i>
@@ -172,6 +202,13 @@
                 </a>
                 <a href="#" class="work__img">
                     <img src="./assets/img/sysmedpro.jpeg" alt="">
+                    <div class="work__buttons">
+                        <span>Patient & Medical Record Management Hospital System</span>
+                        <div class="buttons">
+                            <button class="btn repo-btn">Repository</button>
+                            <button class="btn backend-btn">Demo</button>
+                        </div>
+                    </div>
                     <div class="work__icon">
                         <i class='bx bxl-react'></i>
                         <i class='bx bxl-css3'></i>
@@ -182,6 +219,13 @@
                 </a>
                 <a href="#" class="work__img">
                     <img src="./assets/img/djgbank.jpeg" alt="">
+                    <div class="work__buttons">
+                        <span>System of Bank Administrative Accounts Payments and Solutions</span>
+                        <div class="buttons">
+                            <button class="btn repo-btn">Repository</button>
+                            <button class="btn backend-btn">Demo</button>
+                        </div>
+                    </div>
                     <div class="work__icon">
                         <i class='bx bxl-react'></i>
                         <i class='bx bxl-css3'></i>
@@ -199,10 +243,10 @@
 
             <div class="contact__container bd-grid">
                 <form action="https://formsubmit.co/condejuan27@gmail.com" method="POST" class="contact__form">
-                    <input type="text" placeholder="Name" name="name" class="contact__input" id="1">
-                    <input type="mail" placeholder="Email" name="email" class="contact__input" id="2">
-                    <textarea name="message" id="3" cols="0" rows="10" class="contact__input"
-                        placeholder="Comment"></textarea>
+                    <input type="text" placeholder="Name" name="name" class="contact__input" id="1" required>
+                    <input type="mail" placeholder="Email" name="email" class="contact__input" id="2" required>
+                    <textarea name="message" id="3" cols="0" rows="10" class="contact__input" placeholder="Comment"
+                        required></textarea>
                     <input type="submit" value="Enviar" class="contact__button button">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
@@ -243,22 +287,118 @@
 
         contact__button.addEventListener('click', () => {
             if (!name.value == '' && !email.value == '' && !message.value == '') {
-                Swal.fire({
+                Swal.mixin({
+                    toast: true,
+                    position: 'top-end',
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                        toast.addEventListener('mouseenter', Swal.stopTimer)
+                        toast.addEventListener('mouseleave', Swal.resumeTimer)
+                    },
                     icon: 'success',
-                    title: 'Mensaje enviado',
-                    text: 'Gracias por contactarme, te respondere lo mas pronto posible',
-                    confirmButtonText: 'Aceptar'
-                });
+                    title: 'Enviado',
+                    text: 'Tu mensaje ha sido enviado correctamente',
+                }).fire();
                 contact__button.value = 'Enviando...';
             } else {
-                Swal.fire({
+                Swal.mixin({
+                    toast: true,
+                    position: 'top-end',
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                        toast.addEventListener('mouseenter', Swal.stopTimer)
+                        toast.addEventListener('mouseleave', Swal.resumeTimer)
+                    },
                     icon: 'error',
-                    title: 'Oops...',
-                    text: 'Por favor llena todos los campos',
-                    confirmButtonText: 'Aceptar'
-                });
+                    title: 'Error',
+                    text: 'Por favor, llena todos los campos',
+                }).fire();
                 event.preventDefault();
             }
+        });
+    </script>
+    <script>
+        const descargar_cv = document.getElementById('descargar_cv');
+        descargar_cv.addEventListener('click', () => {
+            Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                },
+                icon: 'success',
+                title: 'Descargando',
+                text: 'El CV se está descargando',
+            }).fire();
+
+            // Reemplaza 'TU_ENLACE_DE_DESCARGA' con el enlace de descarga de Google Drive
+            window.open('https://drive.google.com/file/d/1Z2Z3Z4Z5Z6Z7Z8Z9Z0Z1Z2Z3Z4Z5Z6Z7Z8Z9Z0Z1Z2Z3Z4Z5Z6Z7Z8Z9Z0Z1Z2Z3Z4Z5Z6Z7Z8Z9Z0Z1Z2Z3Z4Z5Z6Z7Z8Z9Z0Z1Z2Z3Z4Z5Z6Z7Z8Z9Z0Z1Z2Z3Z4Z5Z6Z7Z8Z9Z0Z1Z2Z3Z4Z5Z6Z7Z8Z9Z0Z1Z2Z3Z4Z5Z6Z7Z8Z9Z0Z1Z2Z3Z4Z5Z6Z7Z8Z9Z0Z1Z2Z3Z4Z5Z6Z7Z8Z9Z0Z1Z2Z3Z4Z5Z6Z7Z8Z9Z0Z/view?usp=sharing');
+        });
+    </script>
+    <script>
+        const repo_landing = document.getElementById('repo_landing');
+        const demo_landing = document.getElementById('demo_landing');
+
+        repo_landing.addEventListener('click', () => {
+            window.location.href = 'https://github.com/JuanConde27/landing_page';
+        });
+
+        demo_landing.addEventListener('click', () => {
+            window.location.href = 'https://juanconde27.github.io/landing_page/';
+        });
+
+        const repo_fire = document.getElementById('repo_fire');
+        const demo_fire = document.getElementById('demo_fire');
+
+        repo_fire.addEventListener('click', () => {
+            window.location.href = 'https://github.com/JuanConde27/SofwareLab';
+        });
+
+        demo_fire.addEventListener('click', () => {
+            window.location.href = 'https://softwarelab-84147.web.app';
+        });
+
+        const repo_barber = document.getElementById('repo_barber');
+        const demo_barber = document.getElementById('demo_barber');
+
+        repo_barber.addEventListener('click', () => {
+            window.location.href = 'https://github.com/JuanConde27/BarberBackend';
+        });
+
+        demo_barber.addEventListener('click', () => {
+            window.location.href = 'https://juanconde27.github.io/BarberFrontend/';
+        });
+
+        const repo_crud = document.getElementById('repo_crud');
+        const demo_crud = document.getElementById('demo_crud');
+
+        repo_crud.addEventListener('click', () => {
+            window.location.href = 'https://github.com/JuanConde27/Manage-User-Mysql-ReactJs';
+        });
+
+        demo_crud.addEventListener('click', () => {
+            Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                },
+                icon: 'info',
+                title: 'Info',
+                text: 'El demo de este proyecto no está disponible por el momento',
+            }).fire();
         });
     </script>
 </body>
