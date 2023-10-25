@@ -404,13 +404,14 @@ img {
 .btn {
   background-color: var(--first-color);
   color: white;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   padding: 0.5rem 1.5rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
-  border: 1px solid white;
+  font-weight: var(--font-semi);
+  font-family: var(--body-font);
 }
 
 .btn:hover {
