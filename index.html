@@ -247,7 +247,7 @@
                     <input type="mail" placeholder="Email" name="email" class="contact__input" id="2" required>
                     <textarea name="message" id="3" cols="0" rows="10" class="contact__input" placeholder="Comment"
                         required></textarea>
-                    <input type="submit" value="Enviar" class="contact__button button">
+                    <input type="submit" value="Send" class="contact__button button">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
                 </form>
@@ -298,8 +298,8 @@
                         toast.addEventListener('mouseleave', Swal.resumeTimer)
                     },
                     icon: 'success',
-                    title: 'Enviado',
-                    text: 'Tu mensaje ha sido enviado correctamente',
+                    title: 'Sent',
+                    text: 'Your message has been sent successfully',
                 }).fire();
                 contact__button.value = 'Enviando...';
             } else {
@@ -315,7 +315,7 @@
                     },
                     icon: 'error',
                     title: 'Error',
-                    text: 'Por favor, llena todos los campos',
+                    text: 'Please fill in all the fields',
                 }).fire();
                 event.preventDefault();
             }
@@ -335,8 +335,8 @@
                     toast.addEventListener('mouseleave', Swal.resumeTimer)
                 },
                 icon: 'success',
-                title: 'Descargando',
-                text: 'El CV se está descargando',
+                title: 'Downloading',
+                text: 'The CV is downloading...',
             }).fire();
 
             // Reemplaza 'TU_ENLACE_DE_DESCARGA' con el enlace de descarga de Google Drive
@@ -397,7 +397,7 @@
                 },
                 icon: 'info',
                 title: 'Info',
-                text: 'El demo de este proyecto no está disponible por el momento',
+                text: 'The demo is not available yet',
             }).fire();
         });
     </script>
