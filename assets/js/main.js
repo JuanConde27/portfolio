@@ -54,6 +54,7 @@ sr.reveal('.home__data, .about__img, .habilidades-container, .section-title, .se
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input, .contact__button .skills--container-main',{interval: 200}); 
+sr.reveal('.qualification-container, .qualification__data',{interval: 200});
 
 const nav__list = document.querySelector('.nav__list');
 const home_title = document.querySelector('.home__title');
@@ -68,17 +69,19 @@ const text_react = document.getElementById('text_react');
 const text_web = document.getElementById('text_web');
 const text_marketing = document.getElementById('text_marketing');
 const footer__title = document.querySelector('.footer__title');
+const text_qualification = document.getElementById('text_qualification');
 
 const language = document.getElementById('language');
 
 language.addEventListener('click', () => {
     if (language.value === 'es') {
-    nav__list.innerHTML = '<li class="nav__item"><a href="#home" class="nav__link active-link">Inicio</a></li><li class="nav__item"><a href="#about" class="nav__link">Sobre mí</a></li><li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li><li class="nav__item"><a href="#work" class="nav__link">Trabajos</a></li><li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>';
+    nav__list.innerHTML = '<li class="nav__item"><a href="#home" class="nav__link active-link">Inicio</a></li><li class="nav__item"><a href="#about" class="nav__link">Sobre mí</a></li><li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li><li class="nav__item"><a href="#qualification" class="nav__link">Calificaciones</a></li><li class="nav__item"><a href="#work" class="nav__link">Proyectos</a></li><li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>';
     home_title.innerHTML = 'Hola!<br>Soy <span class="home__title-color">Juan Manuel</span><br> Desarrollador Web Full Stack';
     descargar.innerHTML = 'Descargar CV';
     section_title.innerHTML = 'Sobre mí';
     about__text.innerHTML = 'Tengo 20 años, soy estudiante de Ingeniería de Sistemas y desarrollador web full stack que vive en Cali, Colombia. Apasionado por la innovación, la tecnología, la programación y el desarrollo web y de software. Si estás interesado en mi trabajo y te gustaría colaborar en un proyecto, estaré encantado de trabajar contigo, y tú estarás encantado de trabajar conmigo. Lo único de lo que estoy seguro es que vine a este mundo para ser grande ¡y trabajaré duro para lograrlo! Me gusta aprender nuevas tecnologías y mejorar mis habilidades. Me gusta trabajar en equipo, soy responsable y comprometido con mi trabajo.';
     text_skills.innerHTML = 'Habilidades';
+    text_qualification.innerHTML = 'Calificaciones';
     text_projects.innerHTML = 'Proyectos';
     text_contact.innerHTML = 'Contacto';
     text_nodejs.innerHTML = 'Desarrollador con Node.js';
@@ -89,4 +92,25 @@ language.addEventListener('click', () => {
     } else if (language.value === 'en') {
         window.location.reload();
     }
+});
+
+// qualifi
+const tabs = document.querySelectorAll("[data-target]"),
+  tabContents = document.querySelectorAll("[data-content]");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.target);
+
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.remove("qualification-active");
+    });
+    target.classList.add("qualification-active");
+
+    tabs.forEach((tab) => {
+      tab.classList.remove("qualification-active");
+    });
+
+    tab.classList.add("qualification-active");
+  });
 });
