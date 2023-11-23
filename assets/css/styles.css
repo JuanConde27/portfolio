@@ -832,6 +832,8 @@ h2.skills__subtitle {
 
 /* Qualification Section */
 
+/* Qualification Section */
+
 .qualification-tabs {
   display: flex;
   justify-content: space-evenly;
@@ -896,10 +898,10 @@ h2.skills__subtitle {
 .qualification-line {
   display: block;
   width: 1px;
-  height: 100%;
+  height: 20%;
   color: var(--first-color);
   background-color: var(--first-color);
-  position: relative;
+  position: absolute;
   left: 50%; /* Mueve la línea a la mitad del contenedor */
   transform: translateX(-50%); /* Centra la línea horizontalmente */
 }
@@ -926,28 +928,25 @@ h2.skills__subtitle {
 
 /* Media Query para dispositivos más pequeños */
 @media screen and (max-width: 768px) {
+  .qualification-tabs {
+    flex-direction: column; /* Cambia la dirección del eje principal a columna para dispositivos más pequeños */
+  }
+
   .qualification-button {
-    padding: 0.8rem 1.5rem;
-    font-size: var(--normal-font-size);
+    width: 100%; /* Ocupa el ancho completo en dispositivos más pequeños */
+    margin-bottom: 1rem;
   }
 
   .qualification-icon {
-    font-size: 1rem;
-    margin-right: var(--margin-bottom-0-2);
+    margin-right: 0; /* Elimina el margen derecho en dispositivos más pequeños */
   }
 
   .qualification-data {
-    grid-template-columns: 1fr;
-    text-align: center;
+    grid-template-columns: 1fr; /* Cambia a una columna en dispositivos más pequeños */
   }
 
-  .qualification-round {
-    display: none; /* Oculta el punto redondo en dispositivos más pequeños */
-  }
-
+  .qualification-round,
   .qualification-line {
-    width: 80%; /* Ajusta el ancho de la línea para dispositivos más pequeños */
-    left: 50%;
-    transform: translateX(-50%);
+    display: none; /* Oculta el punto redondo y la línea en dispositivos más pequeños */
   }
 }
