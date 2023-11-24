@@ -388,8 +388,8 @@
                     <div class="work__buttons">
                         <span>System of Bank Administrative Accounts Payments and Solutions</span>
                         <div class="buttons">
-                            <button class="btn repo-btn">Repository</button>
-                            <button class="btn backend-btn">Demo</button>
+                            <button class="btn repo-btn" id="repo_djgbank">Repository</button>
+                            <button class="btn backend-btn" id="demo_djgbank">Demo</button>
                         </div>
                     </div>
                     <div class="work__icon">
@@ -576,6 +576,17 @@
 
         demo_sysmedpro.addEventListener('click', () => {
             window.location.href = 'https://sysmedpro.netlify.app/';
+        });
+
+        const repo_djgbank = document.getElementById('repo_djgbank');
+        const demo_djgbank = document.getElementById('demo_djgbank');
+
+        repo_djgbank.addEventListener('click', () => {
+            window.location.href = 'https://github.com/DJG-inc/DJGBank_Backend';
+        });
+
+        demo_djgbank.addEventListener('click', () => {
+            window.location.href = 'https://djgbank.netlify.app/';
         });
     </script>
 </body>
