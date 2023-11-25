@@ -589,6 +589,19 @@
             window.location.href = 'https://djgbank.netlify.app/';
         });
     </script>
+    <button id="scrollButton" class="scrollButton">
+        <i class='bx bx-chevrons-down'></i> <!-- Este es un ícono de ejemplo de Boxicons -->
+    </button>
+    <script>
+        const scrollButton = document.getElementById('scrollButton');
+        scrollButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
 </body>
 
 </html>

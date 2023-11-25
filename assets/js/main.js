@@ -114,3 +114,39 @@ tabs.forEach((tab) => {
     tab.classList.add("qualification-active");
   });
 });
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    let scrollButton = document.getElementById("scrollButton");
+    let sections = document.querySelectorAll("section");
+    let currentIndex = 0;
+  
+    scrollButton.addEventListener("click", function () {
+      currentIndex = (currentIndex + 1) % sections.length; // Ciclo entre las secciones
+      let nextSection = sections[currentIndex];
+      nextSection.scrollIntoView({ behavior: "smooth" });
+  
+      // Cambiar la dirección de la flecha si estamos en la última sección
+      if (currentIndex === sections.length - 1) {
+        this.innerHTML = "<i class='bx bx-chevrons-up'></i>";
+      } else {
+        this.innerHTML = "<i class='bx bx-chevrons-down'></i>";
+      }
+  
+      // Dentro del eventListener de 'click' en scrollButton
+      if (currentIndex === 0 && scrollButton.innerHTML.includes("chevron-up")) {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        currentIndex = -1; // Para que el próximo clic vaya a la primera sección
+        this.innerHTML = "<i class='bx bx-chevrons-down'></i>";
+      }
+    });
+  
+    // Opcional: Detectar cuando el usuario hace scroll manualmente al final de la página para cambiar la flecha
+    window.addEventListener("scroll", function () {
+      let { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+      if (scrollTop + clientHeight >= scrollHeight - 5) {
+        // Estamos en el fondo de la página
+        scrollButton.innerHTML = "<i class='bx bx-chevrons-up'></i>";
+        currentIndex = sections.length - 1; // Asegúrate de que el índice sea el último
+      }
+    });
+  });

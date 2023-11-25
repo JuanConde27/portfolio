@@ -950,3 +950,37 @@ h2.skills__subtitle {
     display: none; /* Oculta el punto redondo y la línea en dispositivos más pequeños */
   }
 }
+
+.scrollButton {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: transparent;
+  color: var(--first-color);
+  border: solid 1px var(--first-color);
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000; /* Asegúrate de que el botón no sea cubierto por otros elementos */
+}
+
+.scrollButton i {
+  font-size: 20px; /* Ajusta el tamaño del ícono */
+}
+
+.scrollButton:hover {
+  background-color: var(--first-color);
+  color: #fff;
+}
+
+/* Media Query para dispositivos más pequeños */
+@media screen and (max-width: 768px) {
+  .scrollButton {
+    bottom: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+}
+
