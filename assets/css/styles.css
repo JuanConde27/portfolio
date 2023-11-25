@@ -973,6 +973,22 @@ h2.skills__subtitle {
   color: #fff;
 }
 
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.bounce {
+  animation: bounce 1.5s infinite;
+}
+
 /* Media Query para dispositivos más pequeños */
 @media screen and (max-width: 768px) {
   .scrollButton {

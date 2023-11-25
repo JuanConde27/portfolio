@@ -75,7 +75,7 @@ const language = document.getElementById('language');
 
 language.addEventListener('click', () => {
     if (language.value === 'es') {
-    nav__list.innerHTML = '<li class="nav__item"><a href="#home" class="nav__link active-link">Inicio</a></li><li class="nav__item"><a href="#about" class="nav__link">Sobre mí</a></li><li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li><li class="nav__item"><a href="#qualification" class="nav__link">Calificaciones</a></li><li class="nav__item"><a href="#work" class="nav__link">Proyectos</a></li><li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>';
+    nav__list.innerHTML = '<li class="nav__item"><a href="#home" class="nav__link active-link">Inicio</a></li><li class="nav__item"><a href="#about" class="nav__link">Sobre mí</a></li><li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li><li class="nav__item"><a href="#qualification" class="nav__link">Experiencia</a></li><li class="nav__item"><a href="#work" class="nav__link">Proyectos</a></li><li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>';
     home_title.innerHTML = 'Hola!<br>Soy <span class="home__title-color">Juan Manuel</span><br> Desarrollador Web Full Stack';
     descargar.innerHTML = 'Descargar CV';
     section_title.innerHTML = 'Sobre mí';
@@ -120,7 +120,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
     let sections = document.querySelectorAll("section");
     let currentIndex = 0;
   
+    scrollButton.classList.add("bounce");
+
     scrollButton.addEventListener("click", function () {
+      //parar animación
+      this.classList.remove("bounce");
+      void this.offsetWidth;
+
       currentIndex = (currentIndex + 1) % sections.length; // Ciclo entre las secciones
       let nextSection = sections[currentIndex];
       nextSection.scrollIntoView({ behavior: "smooth" });
