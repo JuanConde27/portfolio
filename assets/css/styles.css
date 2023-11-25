@@ -873,6 +873,7 @@ h2.skills__subtitle {
 .qualification-title {
   font-size: var(--normal-font-size);
   font-weight: bold;
+  color: navy;
 }
 
 .qualification-subtitle {

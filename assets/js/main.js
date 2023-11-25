@@ -134,7 +134,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
       // Cambiar la dirección de la flecha si estamos en la última sección
       if (currentIndex === sections.length - 1) {
         this.innerHTML = "<i class='bx bx-chevrons-up'></i>";
-      } else {
+      } 
+
+      //cambar la dirección de la flecha si estamos en la primera sección
+      if (currentIndex === 0) {
         this.innerHTML = "<i class='bx bx-chevrons-down'></i>";
       }
   
@@ -144,6 +147,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
         currentIndex = -1; // Para que el próximo clic vaya a la primera sección
         this.innerHTML = "<i class='bx bx-chevrons-down'></i>";
       }
+
+      // Volver a animar si esta en la primera sección
+      if (currentIndex === 0) {
+        this.classList.add("bounce");
+      }
+
     });
   
     // Opcional: Detectar cuando el usuario hace scroll manualmente al final de la página para cambiar la flecha
@@ -153,6 +162,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         // Estamos en el fondo de la página
         scrollButton.innerHTML = "<i class='bx bx-chevrons-up'></i>";
         currentIndex = sections.length - 1; // Asegúrate de que el índice sea el último
+      } else {
+        scrollButton.innerHTML = "<i class='bx bx-chevrons-down'></i>";
       }
     });
+
   });
