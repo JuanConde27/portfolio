@@ -381,13 +381,12 @@ img {
 }
 
 .work__buttons span {
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   font-weight: var(--font-semi);
   color: white;
   align-items: center;
   text-align: center;
   justify-content: center;
-  padding: 0 1rem;
 }
 
 .buttons {
@@ -404,7 +403,7 @@ img {
 .btn {
   background-color: var(--first-color);
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   padding: 0.5rem 1.5rem;
   border: none;
   border-radius: 5px;
