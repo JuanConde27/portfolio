@@ -1042,8 +1042,14 @@ h2.skills__subtitle {
 .dark-mode .footer__title,
 .dark-mode .footer__contact p,
 .dark-mode .footer__social a,
+.dark-mode .nav__toggle,
 .dark-mode .footer__copy {
     color: #fff; /* Color del texto en modo oscuro para elementos específicos */
+}
+
+
+.dark-mode #github {
+  color: #fff; /* Color del texto en modo oscuro para elementos específicos */
 }
 
 /* Agrega estilos para el modo oscuro en los iconos */
