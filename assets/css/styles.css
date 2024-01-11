@@ -1000,3 +1000,70 @@ h2.skills__subtitle {
   }
 }
 
+/* Agrega estilos para el modo oscuro */
+.dark-mode {
+  background-color: #000000;
+  color: #fff;
+}
+
+/* Estilos adicionales para el botón */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 8px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.dark-mode-toggle:hover {
+  color: var(--first-color);
+}
+
+/* Agrega estilos adicionales para el modo oscuro en el header */
+.l-header {
+  background-color: #fff; /* Color del fondo del header en modo claro */
+}
+
+.l-header.dark-mode {
+  background-color: #000000; /* Color del fondo del header en modo oscuro */
+}
+
+/* Establece colores específicos para los textos en modo oscuro según la clase o etiqueta */
+.dark-mode .nav__link,
+.dark-mode .nav__logo,
+.dark-mode .home__title,
+.dark-mode .about__text,
+.dark-mode .section-title,
+.dark-mode .item-skills p,
+.dark-mode .qualification-title,
+.dark-mode .qualification-subtitle,
+.dark-mode .work__buttons span,
+.dark-mode .footer__title,
+.dark-mode .footer__contact p,
+.dark-mode .footer__social a,
+.dark-mode .footer__copy {
+    color: #fff; /* Color del texto en modo oscuro para elementos específicos */
+}
+
+/* Agrega estilos para el modo oscuro en los iconos */
+#sun-icon {
+  display: none; /* Oculta el ícono de sol por defecto */
+}
+
+.dark-mode #sun-icon.visible {
+  display: inline-block; /* Muestra el ícono de sol en modo oscuro */
+}
+
+.dark-mode #moon-icon {
+  display: none; /* Oculta el ícono de luna en modo oscuro */
+}
+
+/* Estilos para los campos de entrada en la sección de contacto */
+.contact__form input[type="text"],
+.contact__form input[type="mail"],
+.contact__form textarea {
+  background-color: #fff; /* Color blanco (puedes cambiarlo según tus preferencias) */
+  color: #000000; /* Color negro (puedes cambiarlo según tus preferencias) */
+}
+

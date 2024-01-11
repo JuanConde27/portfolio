@@ -168,3 +168,34 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
   });
+
+// Actualiza la función toggleDarkMode() para cambiar la visibilidad de los íconos
+function toggleDarkMode() {
+  const body = document.body;
+  const header = document.querySelector('.l-header');
+  const sunIcon = document.getElementById('sun-icon');
+
+  body.classList.toggle('dark-mode');
+  header.classList.toggle('dark-mode');
+
+  // Cambia la visibilidad de los íconos basándote en la clase dark-mode
+  sunIcon.classList.toggle('visible');
+
+  // Guarda el estado del modo oscuro en el almacenamiento local
+  const isDarkMode = body.classList.contains('dark-mode');
+  localStorage.setItem('darkMode', isDarkMode);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const isDarkMode = localStorage.getItem('darkMode') === 'true';
+  const body = document.body;
+  const header = document.querySelector('.l-header');
+  const sunIcon = document.getElementById('sun-icon');
+
+  // Aplica el modo oscuro si estaba activado
+  if (isDarkMode) {
+    body.classList.add('dark-mode');
+    header.classList.add('dark-mode');
+    sunIcon.classList.add('visible');
+  }
+});
