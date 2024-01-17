@@ -605,6 +605,7 @@ h2.skills__subtitle {
 .footer__contact i {
   font-size: 24px;
   margin-right: 10px;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1055,6 +1056,26 @@ h2.skills__subtitle {
   border: 1px solid #ffffff29;
 }
 
+.dark-mode .qualification-line {
+  background-color: #fff;
+}
+
+.dark-mode .contact__input {
+  background-color: #000000; /* Color del fondo del header en modo oscuro */
+  color: #fff; /* Color del texto en modo oscuro para elementos específicos */
+  border: 1px solid #ffffff;
+}
+
+.dark-mode .contact__form input[type="text"],
+.dark-mode .contact__form input[type="mail"],
+.dark-mode .contact__form textarea {
+  background-color: #000000; /* Color del fondo del header en modo oscuro */
+  color: #fff; /* Color del texto en modo oscuro para elementos específicos */
+}
+
+.dark-mode .work__img{
+  box-shadow: 0px 4px 25px rgba(255, 255, 255, 0.142);
+}
 
 .dark-mode #github {
   color: #fff; /* Color del texto en modo oscuro para elementos específicos */
