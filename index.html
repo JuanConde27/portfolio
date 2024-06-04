@@ -411,6 +411,22 @@
                         <i class='bx bxl-postgresql'></i>
                     </div>
                 </a>
+                <a class="work__img">
+                    <img src="./assets/img/Aitools.jpeg" alt="">
+                    <div class="work__buttons">
+                        <span>Platform that offers a set of tools powered by artificial intelligence to facilitate the requirements elicitation process</span>
+                        <div class="buttons">
+                            <button class="btn repo-btn" id="repo_djgtools">Repository</button>
+                            <button class="btn backend-btn" id="demo_djgtools">Demo</button>
+                        </div>
+                    </div>
+                    <div class="work__icon">
+                        <i class='bx bxl-react'></i>
+                        <i class='bx bxl-css3'></i>
+                        <i class='bx bxl-python'></i>
+                        <i class='bx bxl-flask'></i>
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -596,6 +612,18 @@
         demo_djgbank.addEventListener('click', () => {
             window.location.href = 'https://djgbank.netlify.app/';
         });
+
+        const repo_djgtools = document.getElementById('repo_djgtools');
+        const demo_djgtools = document.getElementById('demo_djgtools');
+
+        repo_djgtools.addEventListener('click', () => {
+            window.location.href = 'https://github.com/DJG-inc/DJG_IA_Backend'
+            });
+
+        demo_djgtools.addEventListener('click', () => {
+            window.location.href = 'https://djgaitools.netlify.app/'
+        });
+
     </script>
     <button id="scrollButton" class="scrollButton">
         <i class='bx bx-chevrons-down'></i> <!-- Este es un ícono de ejemplo de Boxicons -->
