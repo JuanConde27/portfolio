@@ -514,24 +514,12 @@
     </script>
     <script>
         const descargar_cv = document.getElementById('descargar_cv');
-        descargar_cv.addEventListener('click', () => {
-            Swal.mixin({
-                toast: true,
-                position: 'top-end',
-                showConfirmButton: false,
-                timer: 2000,
-                timerProgressBar: true,
-                didOpen: (toast) => {
-                    toast.addEventListener('mouseenter', Swal.stopTimer)
-                    toast.addEventListener('mouseleave', Swal.resumeTimer)
-                },
-                icon: 'success',
-                title: 'Downloading',
-                text: 'The CV is downloading...',
-            }).fire();
-
-            window.open('https://drive.google.com/file/d/15MW61Ln_wcZv4jdHx4MFPBlsH7P8PxIi/view?usp=sharing');
-        });
+        
+        if (descargar_cv) {
+            descargar_cv.addEventListener('click', () => {
+                window.open('https://drive.google.com/file/d/15MW61Ln_wcZv4jdHx4MFPBlsH7P8PxIi/view?usp=sharing');
+            });
+        }
     </script>
     <script>
         const repo_landing = document.getElementById('repo_landing');
