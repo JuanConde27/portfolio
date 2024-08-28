@@ -476,24 +476,10 @@
         const email = document.getElementById('2');
         const message = document.getElementById('3');
 
-        contact__button.addEventListener('click', () => {
-            if (!name.value == '' && !email.value == '' && !message.value == '') {
-                Swal.mixin({
-                    toast: true,
-                    position: 'top-end',
-                    showConfirmButton: false,
-                    timer: 3000,
-                    timerProgressBar: true,
-                    didOpen: (toast) => {
-                        toast.addEventListener('mouseenter', Swal.stopTimer)
-                        toast.addEventListener('mouseleave', Swal.resumeTimer)
-                    },
-                    icon: 'success',
-                    title: 'Sent',
-                    text: 'Your message has been sent successfully',
-                }).fire();
-                contact__button.value = 'Enviando...';
-            } else {
+        //validar que los campos 
+        contact__button.addEventListener('click', (e) => {
+            if (name.value === '' || email.value === '' || message.value === '') {
+                e.preventDefault();
                 Swal.mixin({
                     toast: true,
                     position: 'top-end',
@@ -506,9 +492,39 @@
                     },
                     icon: 'error',
                     title: 'Error',
-                    text: 'Please fill in all the fields',
+                    text: 'All fields are required',
                 }).fire();
-                event.preventDefault();
+            } else if (email.value.indexOf('@') === -1 || email.value.indexOf('.') === -1) {
+                e.preventDefault();
+                Swal.mixin({
+                    toast: true,
+                    position: 'top-end',
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                        toast.addEventListener('mouseenter', Swal.stopTimer)
+                        toast.addEventListener('mouseleave', Swal.resumeTimer)
+                    },
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Invalid email',
+                }).fire();
+            } else {
+                Swal.mixin({
+                    toast: true,
+                    position: 'top-end',
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                        toast.addEventListener('mouseenter', Swal.stopTimer)
+                        toast.addEventListener('mouseleave', Swal.resumeTimer)
+                    },
+                    icon: 'success',
+                    title: 'Success',
+                    text: 'Message sent successfully',
+                }).fire();
             }
         });
     </script>
