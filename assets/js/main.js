@@ -47,7 +47,7 @@ const sr = ScrollReveal({
     distance: '60px',
     duration: 800,
     delay: 200,
-    reset: true
+    reset: false
 });
 
 sr.reveal('.home__data, .about__img, .habilidades-container, .section-title, .services',{}); 
